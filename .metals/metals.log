@@ -1,0 +1,232 @@
+INFO  time: initialize in 0.6s
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HomeController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/build.sbt
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/build.sbt
+WARN  no build target: 
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.43s
+INFO  skipping build import with status 'Requested'
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+INFO  no build target: using presentation compiler with only scala-library
+10 12, 2019 4:48:34 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1
+10 12, 2019 4:48:34 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4
+10 12, 2019 4:48:34 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 6
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+10 12, 2019 4:51:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 711
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+10 12, 2019 4:57:37 午後 scala.meta.internal.pc.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:626)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1299)
+	at scala.meta.internal.pc.Completions.fromIdentApply$1(Completions.scala:407)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:418)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:393)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:385)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:370)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:403)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+10 12, 2019 5:02:21 午後 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTraceNotification
+10 12, 2019 5:02:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1827
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HomeController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/build.sbt
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/build.sbt
+WARN  no build target: 
+INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/tn/sgz5ps8j3_g5sx6m309qmvjc0000gn/T/metals3635765136109833849/sbt-launch.jar metalsEnable bloopInstall'
+INFO  user cancelled build import
+INFO  time: ran 'sbt bloopInstall' in 5.3s
+INFO  build tool exit: 143
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HomeController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HomeController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HomeController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+10 12, 2019 5:28:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 2673
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/HelloController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+10 12, 2019 9:36:57 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: String index out of range: -1
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+10 12, 2019 9:39:22 午後 scala.meta.internal.pc.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:626)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1299)
+	at scala.meta.internal.pc.Completions.fromIdentApply$1(Completions.scala:407)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:418)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:393)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:385)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:370)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:403)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2019 9:40:18 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4737
+10 12, 2019 9:40:31 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4756
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserForm.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+10 12, 2019 11:06:09 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 8462
+WARN  code navigation does not work for the file '/Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+10 12, 2019 11:08:00 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 8609
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  code navigation does not work for the file '/Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/build.sbt
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/Forms.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UserController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostsController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostsController.scala
+10 13, 2019 12:42:43 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 10617
+10 13, 2019 12:42:49 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 10669
+10 13, 2019 12:42:57 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 10714
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/UsersController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostsController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostsController.scala
+WARN  no build target: /Users/ray_yokoyama/fringe_project/test/play-scala-app/app/controllers/PostsController.scala

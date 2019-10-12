@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# for users
+GET     /                               controllers.UsersController.index()
+GET     /signup                         controllers.UsersController.signup()
+POST    /create                         controllers.UsersController.create()
+
+# for posts
+#GET     /posts                          controllers.PostsController.index()
+#GET     /posts/:id                      controllers.PostsController.show(id: Int)
+#GET     /posts/add                      controllers.PostsController.add()
+#POST    /posts/create                   controllers.PostsController.create()
+
+# homoコントローラは削除予定
+GET     /home                           controllers.HomeController.index()
+POST    /home/form                       controllers.HomeController.form()
+GET     /home/:id                        controllers.HomeController.show(id:Int,name:Option[String])
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
