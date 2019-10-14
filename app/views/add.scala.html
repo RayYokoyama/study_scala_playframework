@@ -1,0 +1,12 @@
+@(message:String, form:Form[PostForm.Data])(implicit
+request: MessagesRequestHeader
+)
+
+@main("新規投稿", "ユーザー登録", "copyright 2019." ) {
+<h2>新規ユーザー作成</h2>
+<p>@message</p>
+  @helper.form(action=routes.PostsController.create()) {
+    @helper.inputText(form("text"))
+    <button>Create User</button>
+  }
+} 

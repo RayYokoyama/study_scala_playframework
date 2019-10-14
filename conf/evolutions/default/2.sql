@@ -5,7 +5,7 @@ CREATE TABLE posts (
   text varchar(100) NOT NULL,
   comment_count int DEFAULT 0,
   posted_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (id),
+  PRIMARY KEY (id)
 );
 
 # --- !Downs

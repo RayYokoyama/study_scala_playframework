@@ -59,6 +59,7 @@ class UsersController @Inject()(
         post.setString(1, uuid)
         post.setString(2, data.name)
         post.executeUpdate
+        Redirect(routes.UsersController.index)
       }
     } catch {
       case e: SQLException =>
@@ -67,6 +68,5 @@ class UsersController @Inject()(
           form
         ))
     }
-    Redirect(routes.UsersController.index)
   }
 }

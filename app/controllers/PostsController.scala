@@ -7,7 +7,7 @@ import play.api.mvc._
 import play.api.data._
 import play.api.data.Forms._
 import play.api.db._
-import UserForm._
+import PostForm._
 import java.lang.ProcessBuilder.Redirect
 import java.sql.Date
 import java.sql.Timestamp
@@ -28,24 +28,64 @@ class PostsController @Inject()(
         val uuid = res.getString("id")
         val title = res.getString("title")
         while (res.next) {
-          message += s"<li><a href='posts/'$uuid>$title</a></li>"
+          message += s"<li><a href='posts/$uuid'>$title</a></li>"
         }
         message += "</ul>"
       }
     } catch {
-      case e:SQLException => {
+      case e:SQLException => 
         println(e)
         message = "<li>no record...</li></ul>"
-      }
     }
     Ok(views.html.posts(
       message
     ))
   }
 
-  def show(id: Int) = Action {
+  def show(id: String) = Action {
     Ok(views.html.show(
       "testdayo"
     ))
+  }
+
+  def add() = Action {implicit request => 
+      println(form)
+      Ok(views.html.add(
+        "フォームを入力してください。",
+        form
+      ))
+  }
+
+  def create() = Action {implicit request =>
+    val formdata = form.bindFromRequest
+    val data = formdata.get
+    val uuid: String = java.util.UUID.randomUUID.toString
+
+    try{
+      db.withConnection { conn =>
+
+        val user = conn.createStatement.executeQuery(
+          "SELECT * FROM test_users LIMIT 1"
+        )
+        while(user.next){
+          println(user.getString("id"))
+          val user_uuid = user.getString("id")
+          println(user_uuid)
+          val post = conn.prepareStatement(
+            "insert into posts values (?, ?, ?, default, default)")
+          post.setString(1, uuid)
+          post.setString(2, user_uuid)
+          post.setString(3, data.text)
+          post.executeUpdate
+        }
+        Redirect(routes.PostsController.show(uuid: String))
+      }
+    } catch {
+      case e: SQLException =>
+        Ok(views.html.add(
+          "フォームに入力してください",
+          form
+        ))
+    }
   }
 }

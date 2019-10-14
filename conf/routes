@@ -10,9 +10,9 @@ POST    /create                         controllers.UsersController.create()
 
 # for posts
 GET     /posts                          controllers.PostsController.index()
-#GET     /posts/:id                      controllers.PostsController.show(id: Int)
-#GET     /posts/add                      controllers.PostsController.add()
-#POST    /posts/create                   controllers.PostsController.create()
+GET     /posts/add                      controllers.PostsController.add()
+GET     /posts/:id                      controllers.PostsController.show(id: String)
+POST    /posts/create                   controllers.PostsController.create()
 
 # homoコントローラは削除予定
 GET     /home                           controllers.HomeController.index()
