@@ -9,7 +9,7 @@ GET     /signup                         controllers.UsersController.signup()
 POST    /create                         controllers.UsersController.create()
 
 # for posts
-#GET     /posts                          controllers.PostsController.index()
+GET     /posts                          controllers.PostsController.index()
 #GET     /posts/:id                      controllers.PostsController.show(id: Int)
 #GET     /posts/add                      controllers.PostsController.add()
 #POST    /posts/create                   controllers.PostsController.create()
