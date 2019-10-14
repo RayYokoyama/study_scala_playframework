@@ -33,10 +33,10 @@ class UsersController @Inject()(
     } catch {
       case e:SQLException => 
         println(e)
-        msg  ="<li>no record...</li></ul>"
+        message  ="<li>no record...</li></ul>"
     }
     Ok(views.html.index(
-      msg
+      message
     ))
   } 
 
