@@ -1,14 +1,14 @@
 package controllers
 
-object UserForm {
+object PostForm {
   import play.api.data._
   import play.api.data.Forms._
 
-  case class Data(name: String)
+  case class Data(text: String)
 
   val form = Form(
     mapping(
-      "name" -> text
+      "text" -> text
     )(Data.apply)(Data.unapply)
   )
 }
