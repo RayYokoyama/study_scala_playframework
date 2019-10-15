@@ -1,6 +1,3 @@
-# 簡単なブログアプリでscalaとplayframeworkの勉強するためのレポジトリ
-
-
 # 起動
 ### sbt run
 ### mysql -uroot -p
