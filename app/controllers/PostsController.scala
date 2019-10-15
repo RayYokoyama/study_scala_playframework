@@ -75,14 +75,19 @@ class PostsController @Inject()(
   def create() = Action {implicit request =>
     val formdata = form.bindFromRequest
     val data = formdata.get
-    val uuid: String = java.util.UUID.randomUUID.toString
+    val uuid: String = java.util.UUID.randomUUID.toString    
+    // Todo
+    // user_idをAPIから入力できるようにする
+    val user_id: String = "ssssssssssssssssss"
 
     try{
       db.withConnection { conn =>
-
         val user = conn.createStatement.executeQuery(
-          "SELECT * FROM test_users LIMIT 1"
+          s"SELECT * FROM test_users where id = '${user_id}'"
         )
+        if(!user.last()){ 
+          throw new Exception("ユーザーがいません") 
+        }
         while(user.next){
           println(user.getString("id"))
           val user_uuid = user.getString("id")
@@ -98,8 +103,14 @@ class PostsController @Inject()(
       }
     } catch {
       case e: SQLException =>
+        println(e)
         Ok(views.html.add(
           "フォームに入力してください",
+          form
+        ))
+      case e: Exception =>
+        Ok(views.html.add(
+          e.getMessage,
           form
         ))
     }
