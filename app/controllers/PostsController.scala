@@ -25,9 +25,9 @@ class PostsController @Inject()(
         val client = conn.createStatement
         val res = client.executeQuery("SELECT * from posts")
         println(res)
-        val uuid = res.getString("id")
-        val title = res.getString("title")
         while (res.next) {
+          val uuid = res.getString("id")
+          val title = res.getString("text")
           message += s"<li><a href='posts/$uuid'>$title</a></li>"
         }
         message += "</ul>"
@@ -43,8 +43,24 @@ class PostsController @Inject()(
   }
 
   def show(id: String) = Action {
+    var message = ""
+    try {
+      db.withConnection { conn =>
+        val client = conn.createStatement
+        val res = client.executeQuery(s"SELECT * from posts where id = '${id}'")
+        println(res)
+        while (res.next) {
+          val text = res.getString("text")
+          message += s"<p>${text}</p>"
+        }
+      }
+    } catch {
+      case e:SQLException =>
+        println(e)
+        message = "<p>no record...</p>"
+    }
     Ok(views.html.show(
-      "testdayo"
+      message
     ))
   }
 
