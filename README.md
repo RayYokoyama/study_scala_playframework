@@ -8,11 +8,11 @@
 
 
 # 調べること
-* railsで言うところのmigrationファイルはevolution/default/#{i}.sql
-　　→これは一回実行した後はどうする？
-　　→tableがすでにあるとエラー吐くから別フォルダに置いてる
+## railsで言うところのmigrationファイルはevolution/default/#{i}.sql
+→これは一回実行した後はどうする？
+→tableがすでにあるとエラー吐くから別フォルダに置いてる
 
-* controllerにhtmlを書く感じがすごく気持ち悪い
-* model.rb的なのがないからDBにScopeとかどこに書こう
-  →そもそも ActiveRecordじゃない時点でscopeとかは書きようがあるんかな
-  →あるやろうけどSQL直で描くのもすごい嫌輩何かAPI探す
+## controllerにhtmlを書く感じがすごく気持ち悪い
+## model.rb的なのがないからDBにScopeとかどこに書こう
+→そもそも ActiveRecordじゃない時点でscopeとかは書きようがあるんかな
+→あるやろうけどSQL直で描くのもすごい嫌やから何かAPI探す
