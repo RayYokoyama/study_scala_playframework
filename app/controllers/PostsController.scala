@@ -65,7 +65,6 @@ class PostsController @Inject()(
   }
 
   def add() = Action {implicit request => 
-      println(form)
       Ok(views.html.add(
         "フォームを入力してください。",
         form
@@ -78,28 +77,26 @@ class PostsController @Inject()(
     val uuid: String = java.util.UUID.randomUUID.toString    
     // Todo
     // user_idをAPIから入力できるようにする
-    val user_id: String = "ssssssssssssssssss"
+    val user_id: String = "11111111-1111-1111-1111-111111111111"
 
     try{
       db.withConnection { conn =>
-        val user = conn.createStatement.executeQuery(
-          s"SELECT * FROM test_users where id = '${user_id}'"
-        )
-        if(!user.last()){ 
-          throw new Exception("ユーザーがいません") 
-        }
-        while(user.next){
-          println(user.getString("id"))
+        val user_query = "SELECT * FROM test_users where id = ?"
+        val ps = conn.prepareStatement(user_query)
+        ps.setString(1, user_id)
+        val user = ps.executeQuery()
+        if(user.last()){
           val user_uuid = user.getString("id")
-          println(user_uuid)
           val post = conn.prepareStatement(
             "insert into posts values (?, ?, ?, default, default)")
           post.setString(1, uuid)
           post.setString(2, user_uuid)
           post.setString(3, data.text)
           post.executeUpdate
+          Redirect(routes.PostsController.show(uuid: String))
+        }else{
+          throw new Exception("ユーザーがいません") 
         }
-        Redirect(routes.PostsController.show(uuid: String))
       }
     } catch {
       case e: SQLException =>
